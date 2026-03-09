@@ -53,7 +53,7 @@ import AppFooter from '../components/AppFooter.vue'
 
 // 设置页面标题和元数据
 useHead({
-  title: 'Great AI Default Page,
+  title: 'Great AI Default Page',
   meta: [
     {
       name: 'description',

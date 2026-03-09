@@ -1,8 +1,8 @@
 <template>
   <div class="super-agent-container">
     <div class="header">
-      <div class="back-button" @click="goBack">返回</div>
-      <h1 class="title">AI超级智能体</h1>
+      <div class="back-button" @click="goBack">Back</div>
+      <h1 class="title">AI Agent</h1>
       <div class="placeholder"></div>
     </div>
     
@@ -33,15 +33,15 @@ import { chatWithManus } from '../api'
 
 // 设置页面标题和元数据
 useHead({
-  title: 'AI超级智能体 - 鱼皮AI超级智能体应用平台',
+  title: 'AI Agent',
   meta: [
     {
       name: 'description',
-      content: 'AI超级智能体是鱼皮AI超级智能体应用平台的全能助手，能解答各类专业问题，提供精准建议和解决方案'
+      content: ''
     },
     {
       name: 'keywords',
-      content: 'AI超级智能体,智能助手,专业问答,AI问答,专业建议,鱼皮,AI智能体'
+      content: ''
     }
   ]
 })
@@ -164,7 +164,7 @@ const goBack = () => {
 // 页面加载时添加欢迎消息
 onMounted(() => {
   // 添加欢迎消息
-  addMessage('你好，我是AI超级智能体。我可以解答各类问题，提供专业建议，请问有什么可以帮助你的吗？', false)
+  addMessage('How can I help?', false)
 })
 
 // 组件销毁前关闭SSE连接

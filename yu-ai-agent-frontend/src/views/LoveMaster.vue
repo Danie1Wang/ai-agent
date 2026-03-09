@@ -1,8 +1,8 @@
 <template>
   <div class="love-master-container">
     <div class="header">
-      <div class="back-button" @click="goBack">返回</div>
-      <h1 class="title">AI恋爱大师</h1>
+      <div class="back-button" @click="goBack">Back</div>
+      <h1 class="title">AI love master</h1>
       <div class="chat-id">会话ID: {{ chatId }}</div>
     </div>
     
@@ -33,15 +33,15 @@ import { chatWithLoveApp } from '../api'
 
 // 设置页面标题和元数据
 useHead({
-  title: 'AI恋爱大师 - 鱼皮AI超级智能体应用平台',
+  title: 'AI love master',
   meta: [
     {
       name: 'description',
-      content: 'AI恋爱大师是鱼皮AI超级智能体应用平台的专业情感顾问，帮你解答各种恋爱问题，提供情感建议'
+      content: ''
     },
     {
       name: 'keywords',
-      content: 'AI恋爱大师,情感顾问,恋爱咨询,AI聊天,情感问题,鱼皮,AI智能体'
+      content: ''
     }
   ]
 })
@@ -117,7 +117,7 @@ onMounted(() => {
   chatId.value = generateChatId()
   
   // 添加欢迎消息
-  addMessage('欢迎来到AI恋爱大师，请告诉我你的恋爱问题，我会尽力给予帮助和建议。', false)
+  addMessage('', false)
 })
 
 // 组件销毁前关闭SSE连接
